@@ -9,8 +9,8 @@ double Company::getRevenue() const { return revenue; }
 
 void Company::display() const {
     cout << "Company: " << name
-         << " | Sector: " << sector
-         << " | Revenue: " << revenue << endl;
+         << "Sector: " << sector
+         << "Revenue: " << revenue << endl;
 }
 
 vector<Company> readCSV(const string& filename) {
