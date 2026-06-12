@@ -9,8 +9,8 @@ double Company::getRevenue() const { return revenue; }
 
 void Company::display() const {
     cout << "Company: " << name
-         << " | Sector: " << sector
-         << " | Revenue: " << revenue << endl;
+         << "Sector: " << sector
+         << "Revenue: " << revenue << endl;
 }
 
 vector<Company> readCSV(const string& filename) {
@@ -18,7 +18,7 @@ vector<Company> readCSV(const string& filename) {
     ifstream file(filename.c_str()); 
 
     if (!file.is_open()) {
-        cerr << "Error: Could not open file!" << endl;
+        cerr << "Error: Could not open file..." << endl;
         return companies;
     }
 
